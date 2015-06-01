@@ -1,0 +1,10 @@
+diff -Naur thumbnailer.orig/CMakeLists.txt thumbnailer/CMakeLists.txt
+--- thumbnailer.orig/CMakeLists.txt	2015-06-01 14:33:23.448924464 +0300
++++ thumbnailer/CMakeLists.txt	2015-06-01 14:33:28.888102257 +0300
+@@ -50,6 +50,5 @@
+ add_subdirectory(src)
+ add_subdirectory(data)
+ add_subdirectory(plugins/Ubuntu/Thumbnailer)
+-add_subdirectory(tests)
+ add_subdirectory(tools)
+ add_subdirectory(include)

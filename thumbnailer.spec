@@ -18,6 +18,7 @@ Source:		thumbnailer-%{snapshot_date}.tar.bz2
 Patch0:		thumbnailer-disable-gtest.patch
 BuildRequires:	cmake
 BuildRequires:	qt5-macros
+BuildRequires:	qmake5
 BuildRequires:	gtest-devel
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(gstreamer-1.0)

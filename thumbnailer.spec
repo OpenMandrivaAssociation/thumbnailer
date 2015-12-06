@@ -55,9 +55,9 @@ Development files for %{name}.
 %prep
 %setup -qn %{name}
 %patch0 -p1
-%cmake_qt5
 
 %build
+%cmake_qt5
 %make
 
 %install

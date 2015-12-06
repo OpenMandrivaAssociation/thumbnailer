@@ -16,8 +16,8 @@ URL:		https://launchpad.net/thumbnailer
 # tar cjf thumbnailer-%{snapshot_date}.tar.bz2 thumbnailer
 Source:		thumbnailer-%{snapshot_date}.tar.bz2
 Patch0:		thumbnailer-disable-gtest.patch
-
 BuildRequires:	cmake
+BuildRequires:	qt5-macros
 BuildRequires:	gtest-devel
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(gstreamer-1.0)

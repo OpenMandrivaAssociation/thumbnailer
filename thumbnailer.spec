@@ -8,7 +8,6 @@ Name:		thumbnailer
 Version:	1.1
 Release:	0.%{snapshot_date}.1
 Summary:	Thumbnail generator for all kinds of files
-
 Group:		Graphics
 License:	LGPLv3
 URL:		https://launchpad.net/thumbnailer
@@ -16,6 +15,7 @@ URL:		https://launchpad.net/thumbnailer
 # tar cjf thumbnailer-%{snapshot_date}.tar.bz2 thumbnailer
 Source:		thumbnailer-%{snapshot_date}.tar.bz2
 Patch0:		thumbnailer-disable-gtest.patch
+Patch1:		thumbnailer-fix-pc.patch
 BuildRequires:	cmake
 BuildRequires:	qt5-macros
 BuildRequires:	qmake5
@@ -54,7 +54,7 @@ Development files for %{name}.
 
 %prep
 %setup -qn %{name}
-%patch0 -p1
+%apply_patches
 
 %build
 %cmake_qt5

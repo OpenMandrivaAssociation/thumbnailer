@@ -1,0 +1,12 @@
+diff -Naur thumbnailer/include/CMakeLists.txt thumbnailer.tpg/include/CMakeLists.txt
+--- thumbnailer/include/CMakeLists.txt	2015-01-13 08:21:58.000000000 +0000
++++ thumbnailer.tpg/include/CMakeLists.txt	2015-12-08 18:53:40.868092432 +0000
+@@ -5,7 +5,7 @@
+ # Build and install a pkg-config file
+ set(prefix ${CMAKE_INSTALL_PREFIX})
+ set(exec_prefix ${prefix}/bin)
+-set(libdir ${prefix}/${LIBDIR})
++set(libdir ${LIBDIR})
+ set(includedir ${prefix}/include)
+ set(pkg-name "lib${COL_LIB_BASENAME}")
+ configure_file(thumbnailer.pc.in thumbnailer.pc @ONLY)

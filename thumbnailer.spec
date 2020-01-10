@@ -54,7 +54,7 @@ Development files for %{name}.
 
 %prep
 %setup -qn %{name}
-%apply_patches
+%autopatch -p1
 
 %build
 %cmake_qt5
